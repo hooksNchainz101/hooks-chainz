@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hooks N Chainz | Towing & Trucking</title>
+    <title>Hooks and Chains | On-Scene Accident Towing & Recovery</title>
 
     <meta
         name="description"
-        content="Hooks N Chainz provides dependable towing, roadside assistance, vehicle transport, and trucking services."
+        content="Hooks and Chains provides insurance-based on-scene accident towing and vehicle recovery. Complete your tow slip application online."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -16,64 +16,318 @@
 
 <body>
 
+    <!-- INTRO VIDEO MODAL -->
+    <div
+        class="video-modal"
+        id="videoModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="videoTitle"
+    >
+        <div class="video-modal-card">
+
+            <button
+                class="video-close"
+                id="videoClose"
+                type="button"
+                aria-label="Close introduction video"
+            >
+                ×
+            </button>
+
+            <div class="video-copy">
+                <span class="eyebrow">Welcome to Hooks and Chains</span>
+
+                <h2 id="videoTitle">
+                    On-Scene Accident Towing & Recovery
+                </h2>
+
+                <p>
+                    Watch how Hooks and Chains handles accident-scene towing,
+                    insurance verification and vehicle recovery.
+                </p>
+            </div>
+
+            <div class="video-frame">
+
+                <video
+                    id="introVideo"
+                    autoplay
+                    muted
+                    playsinline
+                    controls
+                    poster="images/accident-recovery-hero.jpg"
+                >
+                    <source
+                        src="media/hooks-and-chains-intro.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video playback.
+                </video>
+
+            </div>
+
+            <div class="video-actions">
+
+                <button
+                    class="secondary-button"
+                    id="soundButton"
+                    type="button"
+                >
+                    Turn Sound On
+                </button>
+
+                <a
+                    href="#tow-slip"
+                    class="primary-button"
+                    id="videoTowButton"
+                >
+                    Start Tow Slip
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+
     <!-- HEADER -->
     <header>
+
         <nav class="navbar">
 
-            <a href="index.html" class="logo">
-                Hooks N Chainz
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Hooks and Chains home"
+            >
+                <span class="logo-hook">⛓</span>
+                Hooks and Chains
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="towing.html">Towing</a></li>
-                <li><a href="trucking.html">Trucking</a></li>
-                <li><a href="service-area.html">Service Area</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+
+                <li>
+                    <a href="towing.html">Towing & Recovery</a>
+                </li>
+
+                <li>
+                    <a href="service-area.html">Service Area</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
 
-            <a href="tel:PHONE-NUMBER" class="call-button">
-                Call Now
+            <a
+                href="#tow-slip"
+                class="nav-cta"
+            >
+                Start Tow Slip
             </a>
 
         </nav>
+
     </header>
 
 
-    <!-- HERO -->
     <main>
 
+        <!-- HERO -->
         <section class="hero">
+
+            <div class="hero-overlay"></div>
 
             <div class="hero-content">
 
-                <p class="hero-tagline">
-                    Towing • Roadside Assistance • Trucking
-                </p>
+                <span class="hero-badge">
+                    Insurance-Only Towing & Recovery
+                </span>
 
                 <h1>
-                    When You Need A Tow,<br>
-                    We Bring The Hooks.
+                    On-Scene Accident
+                    <span>Towing & Recovery</span>
                 </h1>
 
-                <p>
-                    Reliable towing, roadside assistance, vehicle transport,
-                    and trucking services when you need them.
+                <p class="hero-lead">
+                    Complete your Hooks and Chains tow slip application online.
+                    If you have full coverage, there is no cost and no charge
+                    for service.
                 </p>
 
                 <div class="hero-buttons">
 
-                    <a href="tel:PHONE-NUMBER" class="primary-button">
-                        Call For Service
+                    <a
+                        href="#tow-slip"
+                        class="primary-button"
+                    >
+                        Start Tow Slip
                     </a>
 
-                    <a href="services.html" class="secondary-button">
-                        View Services
+                    <a
+                        href="#coverage"
+                        class="secondary-button"
+                    >
+                        Verify Full Coverage
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="text-button"
+                    >
+                        Call Now →
                     </a>
 
                 </div>
+
+                <div class="hero-points">
+
+                    <span>Accident Recovery</span>
+                    <span>Insurance Verification</span>
+                    <span>Vehicle Transport</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    Simple Process
+                </span>
+
+                <h2>
+                    From accident scene to recovery.
+                </h2>
+
+                <p>
+                    The Hooks and Chains website works as your digital
+                    tow-slip application while you are already at the scene.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        01
+                    </span>
+
+                    <h3>Accident Scene</h3>
+
+                    <p>
+                        Your vehicle has already been involved in an accident
+                        and Hooks and Chains is on scene to assist.
+                    </p>
+
+                </article>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        02
+                    </span>
+
+                    <h3>Complete Tow Slip</h3>
+
+                    <p>
+                        Enter your contact, vehicle, accident and insurance
+                        information using the digital application.
+                    </p>
+
+                </article>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        03
+                    </span>
+
+                    <h3>Verify Coverage</h3>
+
+                    <p>
+                        Your full-coverage insurance information is reviewed
+                        as part of the towing intake process.
+                    </p>
+
+                </article>
+
+
+                <article class="process-card">
+
+                    <span class="process-number">
+                        04
+                    </span>
+
+                    <h3>Tow & Recovery</h3>
+
+                    <p>
+                        Hooks and Chains handles the vehicle recovery and
+                        transport from the accident scene.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- COVERAGE SECTION -->
+        <section
+            class="coverage-section"
+            id="coverage"
+        >
+
+            <div class="coverage-inner">
+
+                <div>
+
+                    <span class="eyebrow light">
+                        Full Coverage Required
+                    </span>
+
+                    <h2>
+                        Fully covered?
+                        <span>No cost. No charge.</span>
+                    </h2>
+
+                    <p>
+                        Hooks and Chains operates through qualifying full
+                        coverage auto insurance for accident towing and
+                        recovery.
+                    </p>
+
+                </div>
+
+                <a
+                    href="#tow-slip"
+                    class="dark-button"
+                >
+                    Begin Insurance Tow Slip
+                </a>
 
             </div>
 
@@ -81,97 +335,469 @@
 
 
         <!-- SERVICES -->
-        <section class="services-preview">
+        <section class="section">
 
-            <h2>Our Services</h2>
+            <div class="section-heading">
 
-            <p>
-                Professional towing and transportation solutions
-                for drivers and businesses.
-            </p>
+                <span class="eyebrow">
+                    What We Handle
+                </span>
 
-            <div class="service-cards">
+                <h2>
+                    Accident towing built around recovery.
+                </h2>
+
+            </div>
+
+
+            <div class="service-grid">
 
                 <article class="service-card">
 
-                    <h3>Towing</h3>
+                    <div class="service-icon">
+                        01
+                    </div>
+
+                    <h3>
+                        On-Scene Accident Towing
+                    </h3>
 
                     <p>
-                        Dependable towing for cars, trucks,
-                        SUVs, and other vehicles.
+                        Vehicle towing directly from an accident scene.
                     </p>
-
-                    <a href="towing.html">
-                        Learn More
-                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <h3>Roadside Assistance</h3>
+                    <div class="service-icon">
+                        02
+                    </div>
+
+                    <h3>
+                        Wrecked Vehicle Recovery
+                    </h3>
 
                     <p>
-                        Help when you're stranded and need
-                        assistance getting back on the road.
+                        Recovery and transport for damaged or disabled vehicles.
                     </p>
-
-                    <a href="services.html">
-                        Learn More
-                    </a>
 
                 </article>
 
 
                 <article class="service-card">
 
-                    <h3>Trucking</h3>
+                    <div class="service-icon">
+                        03
+                    </div>
+
+                    <h3>
+                        Insurance-Based Service
+                    </h3>
 
                     <p>
-                        Professional transportation and trucking
-                        services for your hauling needs.
+                        Tow-slip intake and coverage verification built directly
+                        into the process.
                     </p>
 
-                    <a href="trucking.html">
-                        Learn More
-                    </a>
-
                 </article>
+
+            </div>
+
+
+            <div class="vehicle-strip">
+
+                <span>Cars</span>
+                <span>SUVs</span>
+                <span>Pickup Trucks</span>
+                <span>Sprinter Vans</span>
+                <span>Box Trucks</span>
 
             </div>
 
         </section>
 
 
-        <!-- WHY CHOOSE US -->
-        <section class="why-us">
+        <!-- TOW SLIP -->
+        <section
+            class="tow-slip-section"
+            id="tow-slip"
+        >
 
-            <h2>Why Choose Hooks N Chainz?</h2>
+            <div class="tow-slip-heading">
 
-            <div class="why-grid">
+                <span class="eyebrow">
+                    Digital Application
+                </span>
+
+                <h2>
+                    Complete Your Tow Slip
+                </h2>
+
+                <p>
+                    Enter the information below to begin your
+                    Hooks and Chains accident towing application.
+                </p>
+
+            </div>
+
+
+            <form
+                class="tow-form"
+                id="towForm"
+                autocomplete="off"
+            >
+
+                <!-- CUSTOMER -->
+                <fieldset>
+
+                    <legend>
+                        1. Customer Information
+                    </legend>
+
+                    <div class="form-grid">
+
+                        <label>
+                            Full Name
+                            <input
+                                type="text"
+                                name="customerName"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Phone Number
+                            <input
+                                type="tel"
+                                name="phone"
+                                required
+                            >
+                        </label>
+
+                        <label class="full-width">
+                            Email Address
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                            >
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- VEHICLE -->
+                <fieldset>
+
+                    <legend>
+                        2. Vehicle Information
+                    </legend>
+
+                    <div class="form-grid">
+
+                        <label>
+                            Vehicle Year
+                            <input
+                                type="text"
+                                name="vehicleYear"
+                                inputmode="numeric"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Make
+                            <input
+                                type="text"
+                                name="vehicleMake"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Model
+                            <input
+                                type="text"
+                                name="vehicleModel"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Color
+                            <input
+                                type="text"
+                                name="vehicleColor"
+                            >
+                        </label>
+
+                        <label>
+                            License Plate
+                            <input
+                                type="text"
+                                name="plate"
+                            >
+                        </label>
+
+                        <label>
+                            Vehicle Type
+
+                            <select
+                                name="vehicleType"
+                                required
+                            >
+                                <option value="">
+                                    Select vehicle
+                                </option>
+
+                                <option>
+                                    Car
+                                </option>
+
+                                <option>
+                                    SUV
+                                </option>
+
+                                <option>
+                                    Pickup Truck
+                                </option>
+
+                                <option>
+                                    Sprinter Van
+                                </option>
+
+                                <option>
+                                    Box Truck
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+                            </select>
+
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ACCIDENT -->
+                <fieldset>
+
+                    <legend>
+                        3. Accident & Recovery
+                    </legend>
+
+                    <div class="form-grid">
+
+                        <label class="full-width">
+                            Accident Location
+                            <input
+                                type="text"
+                                name="accidentLocation"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Is Vehicle Drivable?
+
+                            <select
+                                name="drivable"
+                                required
+                            >
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option>
+                                    Yes
+                                </option>
+
+                                <option>
+                                    No
+                                </option>
+                            </select>
+
+                        </label>
+
+                        <label>
+                            Recovery Destination
+                            <input
+                                type="text"
+                                name="destination"
+                                placeholder="Tow lot or approved destination"
+                            >
+                        </label>
+
+                        <label class="full-width">
+                            What Happened?
+
+                            <textarea
+                                name="incidentDetails"
+                                rows="5"
+                                required
+                            ></textarea>
+
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- INSURANCE -->
+                <fieldset>
+
+                    <legend>
+                        4. Insurance Information
+                    </legend>
+
+                    <div class="insurance-banner">
+
+                        <strong>
+                            Full Coverage Required
+                        </strong>
+
+                        <span>
+                            Hooks and Chains is an insurance-only
+                            towing and recovery service.
+                        </span>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <label>
+                            Insurance Company
+                            <input
+                                type="text"
+                                name="insuranceCompany"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Policyholder Name
+                            <input
+                                type="text"
+                                name="policyholder"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Policy Number
+                            <input
+                                type="text"
+                                name="policyNumber"
+                                required
+                            >
+                        </label>
+
+                        <label>
+                            Claim Number
+                            <input
+                                type="text"
+                                name="claimNumber"
+                                placeholder="If available"
+                            >
+                        </label>
+
+                    </div>
+
+
+                    <label class="check-row">
+
+                        <input
+                            type="checkbox"
+                            name="fullCoverage"
+                            required
+                        >
+
+                        <span>
+                            I confirm that I have full coverage
+                            auto insurance.
+                        </span>
+
+                    </label>
+
+
+                    <label class="check-row">
+
+                        <input
+                            type="checkbox"
+                            name="authorization"
+                            required
+                        >
+
+                        <span>
+                            I authorize Hooks and Chains to use the
+                            information provided for towing intake,
+                            coverage verification and accident-recovery
+                            coordination.
+                        </span>
+
+                    </label>
+
+                </fieldset>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit Tow Slip
+                </button>
+
+
+                <p class="form-security-note">
+                    Secure electronic submission must be connected
+                    before accepting live insurance information.
+                </p>
+
+
+                <div
+                    class="form-message"
+                    id="formMessage"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+        </section>
+
+
+        <!-- TRUST -->
+        <section class="trust-section">
+
+            <div class="trust-card">
+
+                <span class="trust-mark">
+                    ✓
+                </span>
 
                 <div>
-                    <h3>Dependable Service</h3>
-                    <p>
-                        We take pride in providing reliable service
-                        when our customers need us.
-                    </p>
-                </div>
 
-                <div>
-                    <h3>Professional Equipment</h3>
-                    <p>
-                        The right equipment and care for every job.
-                    </p>
-                </div>
+                    <span class="eyebrow">
+                        Hooks and Chains
+                    </span>
 
-                <div>
-                    <h3>Customer Focused</h3>
+                    <h2>
+                        Commercially Insured
+                    </h2>
+
                     <p>
-                        Clear communication and professional service
-                        from start to finish.
+                        Professional towing and recovery for
+                        accident-scene vehicle transport.
                     </p>
+
                 </div>
 
             </div>
@@ -179,21 +805,26 @@
         </section>
 
 
-        <!-- CALL TO ACTION -->
-        <section class="cta">
+        <!-- CONTACT CTA -->
+        <section class="final-cta">
 
-            <h2>Need A Tow Or Transport?</h2>
+            <div>
 
-            <p>
-                Contact Hooks N Chainz today for service.
-            </p>
+                <span class="eyebrow light">
+                    Hooks and Chains
+                </span>
 
-            <a href="tel:PHONE-NUMBER" class="primary-button">
-                Call Now
-            </a>
+                <h2>
+                    Ready to complete your tow slip?
+                </h2>
 
-            <a href="contact.html" class="secondary-button">
-                Contact Us
+            </div>
+
+            <a
+                href="#tow-slip"
+                class="dark-button"
+            >
+                Start Application
             </a>
 
         </section>
@@ -201,24 +832,74 @@
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
 
-        <div class="footer-content">
+        <div class="footer-grid">
 
-            <h3>Hooks N Chainz</h3>
+            <div>
 
-            <p>
-                Towing • Roadside Assistance • Trucking
-            </p>
+                <h3>
+                    Hooks and Chains
+                </h3>
 
-            <p>
-                Phone: PHONE NUMBER
-            </p>
+                <p>
+                    Towing & Recovery
+                </p>
 
-            <p>
-                © 2026 Hooks N Chainz. All Rights Reserved.
-            </p>
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Business Address
+                </strong>
+
+                <p>
+                    3931 Covington Highway<br>
+                    Decatur, GA 30032
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Email
+                </strong>
+
+                <p>
+                    Fast.tracksolutions101@gmail.com
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Hours
+                </strong>
+
+                <p>
+                    9:00 AM – 5:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                Commercially Insured
+            </span>
+
+            <span id="copyright">
+                © Hooks and Chains
+            </span>
 
         </div>
 
